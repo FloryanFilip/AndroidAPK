@@ -2,4 +2,7 @@
     <string name="app_name">BrightnessSetter</string>
     <string name="popup_about_en">About</string>
     <string name="welcome">A simple application :)</string>
+    <string name="dialog_fragment_ok">OK</string>
+    <string name="dialog_subject">About</string>
+    <string name="dialog_message">A simple brightness application</string>
 </resources>

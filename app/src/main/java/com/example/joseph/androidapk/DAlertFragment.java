@@ -19,22 +19,13 @@ public class DAlertFragment extends DialogFragment{
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         return new AlertDialog.Builder(getActivity())
                 // Set Dialog Title
-                .setTitle("Alert DialogFragment")
+                .setTitle(R.string.dialog_subject)
                 // Set Dialog Message
-                .setMessage("Alert DialogFragment Tutorial")
+                .setMessage(R.string.dialog_message)
 
                 // Positive button
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Do something else
-                    }
-                })
-
-                // Negative Button
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,	int which) {
-                        // Do something else
-                    }
+                .setPositiveButton(R.string.dialog_fragment_ok, (dialog, which) -> {
+                    // Do something else
                 }).create();
     }
 }
